@@ -227,6 +227,7 @@ end
 
 class MetaStudent
   def initialize knowledge
+    puts knowledge = "./"+knowledge
     require knowledge
   end
   def ponder koan
