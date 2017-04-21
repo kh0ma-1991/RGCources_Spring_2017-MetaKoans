@@ -211,7 +211,6 @@ module MetaKoans
     assert{ b.a == 42 }
 
     o = c::new
-
     assert{ o.a == 42 }
     assert{ o.a? }
     assert{ (o.a = nil) == nil }
@@ -227,7 +226,7 @@ end
 
 class MetaStudent
   def initialize knowledge
-    puts knowledge = "./"+knowledge
+    knowledge = "./"+knowledge
     require knowledge
   end
   def ponder koan
